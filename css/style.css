@@ -1,0 +1,164 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --font-primary: "Outfit", sans-serif;
+    --font-secondary: "Young Serif", serif;
+}
+
+
+*::before,
+*::after,
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body{
+    font-family: var(--font-primary);
+    background-color: var(--eggshell);
+}
+
+
+@media screen and (min-width: 48rem){
+    body{
+        padding: 2.5rem 0;
+    }
+
+    .container,
+    .hero-banner img{
+        border-radius: .5rem;
+    }
+    .hero-banner{
+        padding: 2.5rem;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+
+span{
+    font-weight: 800;
+}
+
+.container{
+    width: min(100%, 48rem);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.recipe-container{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.line-horizontal{
+    border-bottom: .003rem solid var(--light-grey);
+    padding-bottom: 2rem;
+}
+
+.recipe-card h2{
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+
+.recipe-card,
+.step-recipe::marker{
+    color:var(--nutmeg);
+}
+
+.step-recipe::marker{
+    font-weight: bold;
+}
+
+.recipe-list-step{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-left: 1.5rem;
+}
+
+.step-recipe{
+    padding-left: 1rem;
+    color: var(--wenge-brown)
+}
+
+
+
+.title-recipe{
+    font-size: 2em;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--dark-charcoal);
+}
+
+.description-recipe-text{
+    color: var(--wenge-brown);
+}
+
+.preparation-recipe{
+    padding: 2rem 2.5rem;
+    background-color: var(--rose-white);
+}
+
+.preparation-recipe h2{
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+.preparation-recipe,
+.step-recipe::marker{
+    color: var(--dark-raspberry);
+}
+
+
+.label{
+    display: flex;
+    flex-direction: column;
+}
+
+.label h3{
+    color: grey;
+    font-weight: 400;
+}
+
+.grid-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 1rem 2.5rem;
+}
+
+
+
+
+
+
+
